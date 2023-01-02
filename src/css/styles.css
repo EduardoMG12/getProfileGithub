@@ -11,15 +11,23 @@ img {
 }
 
 body {
-  background-color: #24292e;
   font-family: "Kumbh Sans", sans-serif;
   text-align: center;
-  padding-bottom: 100px;
+  overflow-x: hidden;
 }
 
 html:hover .devicon-github-original {
   transform: scale(1.5);
   color: #171515;
+}
+
+.background {
+  background-image: url(../image/githubImage.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100vw;
+  padding-bottom: 100px;
 }
 
 main {
@@ -45,8 +53,12 @@ main {
   /* se for uma tela menor que 980px vai se adaptar a 70% */
   max-width: 960px;
   /* quando chegar em 980px para de aumentar */
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 25px 50px -12px;
-  background-color: #fff;
+  background: rgba(157, 157, 157, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(23, 23, 25, 0.37);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -88,7 +100,7 @@ main {
 }
 
 .container header #btn-search:hover {
-  background-color: hotpink;
+  background-color: rgb(124, 9, 200);
   color: #ffffff;
   border-color: #ffffff;
 }
@@ -114,7 +126,7 @@ main {
 .container .profile-data .info img {
   width: 50%;
   border-radius: 50%;
-  border: 10px solid hotpink;
+  border: 10px solid rgb(124, 9, 200);
 }
 
 .container .profile-data .info h1 {
@@ -152,7 +164,7 @@ main {
 }
 
 .container .profile-data .repositories ul li a:hover {
-  background-color: hotpink;
+  background-color: rgb(124, 9, 200);
   color: #fff
 }
 
