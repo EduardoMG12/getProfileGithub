@@ -19,7 +19,7 @@ const screen = {
         console.log(repo),
         (repositoriesItens += `
         <li>
-            <a href="${repo.html_url}" target"_blank" style="background-color: ${randomColor()}">
+            <a href="${repo.html_url}" target="_blank" style="background-color: ${randomColor()}">
                 ${repo.name}
             </a>
         </li>`)
