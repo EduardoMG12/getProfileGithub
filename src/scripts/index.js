@@ -1,3 +1,6 @@
+import { user } from "./services/user.js";
+import { repositories } from "./services/repositories.js";
+
 document.getElementById("btn-search").addEventListener("click", () => {
   const userName = document.getElementById("input-search").value;
   getUserProfile(userName);
@@ -11,16 +14,6 @@ document.getElementById("input-search").addEventListener("keydown", (e) => {
     getRepositories(userName);
   }
 });
-
-const user = async (userName) => {
-  const response = await fetch(`https://api.github.com/users/${userName}`);
-  return await response.json();
-};
-
-const repositorys = async (userName) => {
-  const response = await fetch(`https://api.github.com/users/${userName}/repos`);
-  return await response.json();
-};
 
 const getUserProfile = (userName) => {
   user(userName).then((userData) => {
@@ -37,7 +30,7 @@ const getUserProfile = (userName) => {
   });
 };
 const getRepositories = (userName) => {
-  repositorys(userName).then((repositoysData) => {
+  repositories(userName).then((repositoysData) => {
     let repositorysItens = "";
     repositoysData.forEach((repo) => {
       repositorysItens += `<li><a href="${repo.html_url}" target="_blank" style="background-color:${randomColor()}">${
