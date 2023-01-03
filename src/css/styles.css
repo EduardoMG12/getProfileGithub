@@ -37,6 +37,11 @@ main {
   padding: 50px 0 0;
 }
 
+#container-devicon {
+  width: 100%;
+
+}
+
 .devicon-github-original {
   font-size: 60px;
   margin-bottom: 30px;
@@ -201,6 +206,10 @@ main {
   .container header h1 {
     font-size: 24px;
     text-align: center;
+  }
+
+  .container .profile-data {
+    padding: 0
   }
 }
 
