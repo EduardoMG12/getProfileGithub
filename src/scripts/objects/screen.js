@@ -11,6 +11,9 @@ const screen = {
             <div class="data">
                 <h1>${user.name ?? "Não possui nome cadastrada 😢"}</h1>
                 <p>${user.bio ?? "Não possui bio cadastrada 😢"}</p>
+                <p>total de repositórios publicos:${user.repositoriesQuantity}</p>
+                <p>Seguindo:${user.followers}</p>
+                <p>Seguidores:${user.following}</p>
             </div>
         </div>`;
     } else this.userProfile.innerHTML = `<p>Prencha o campo com um nome de usuário do Github</p>`;
@@ -21,6 +24,12 @@ const screen = {
         <li>
             <a href="${repo.html_url}" target="_blank" style="background-color: ${randomColor()}">
                 ${repo.name}
+                <div class="repositories-emojis">
+                  <p>🍴${repo.forks}</p>
+                  <p>🔥${repo.stargazers_count}</p>
+                  <p>👀${repo.watchers}</p>
+                  <p>👨‍💻${repo.language}</p>
+                </div>
             </a>
         </li>`)
     );

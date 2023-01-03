@@ -163,6 +163,19 @@ main {
   transition: 0.3s ease-in-out;
 }
 
+.repositories-emojis {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.repositories-emojis>p {
+  background-color: rgb(124, 9, 200);
+  margin-inline: 5px;
+  padding-inline: 5px;
+  padding-block: 5px;
+}
+
 .container .profile-data .repositories ul li a:hover {
   background-color: rgb(124, 9, 200);
   color: #fff
