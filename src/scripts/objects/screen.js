@@ -13,7 +13,7 @@ const screen = {
                 <p>${user.bio ?? "Não possui bio cadastrada 😢"}</p>
             </div>
         </div>`;
-    } else this.userProfile.innerHTML = "";
+    } else this.userProfile.innerHTML = `<p>Prencha o campo com um nome de usuário do Github</p>`;
     let repositoriesItens = "";
     user.repositories.forEach(
       (repo) =>
