@@ -18,7 +18,6 @@ const user = {
     this.repositoriesQuantity = githubUser.public_repos;
   },
   setRepositories(repositories) {
-    console.log(repositories);
     this.repositories = repositories;
   },
 };

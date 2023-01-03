@@ -158,6 +158,7 @@ main {
   padding: 20px;
   border: 1px solid grey;
   margin: 20px;
+  font-size: 20px;
   display: block;
   border-radius: 7px;
   transition: 0.3s ease-in-out;
@@ -174,6 +175,7 @@ main {
   margin-inline: 5px;
   padding-inline: 5px;
   padding-block: 5px;
+  border-radius: 15px;
 }
 
 .container .profile-data .repositories ul li a:hover {
