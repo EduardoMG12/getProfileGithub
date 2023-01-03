@@ -27,8 +27,7 @@ A API Fetch fornece uma interface JavaScript para acessar e manipular partes do 
 
 <h3>Projeto Desktop 👨‍💻</h3>
 
-<img align="center" alt="" height="300" width="360" src="">
-![Alt:gif do site](src/image/projectGithub.gif)
+<img align="center" alt="" height="300" width="360" src="src/image/projectGithub.gif">
 
 🛰 Tecnologias Utilizadas:
 
